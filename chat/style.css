@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(185deg, #62697a, #616c88);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  #language-select {
+    background: #383A40;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+  }
+  #chat-container {
+    position: relative; /* Устанавливаем относительное позиционирование */
+    margin-left: 12%;  /* Отступ слева 20% */
+    margin-right: 10%;  /* Отступ справа 10% */
+    width: calc(100% - 22%); /* Ширина окна с учетом отступов */
+    height: 745px;
+    border: 1px solid rgba(0, 0, 0); 
+    padding: 15px;
+    overflow: scroll;
+}
+
+  #chat-messages {
+    position: relative; /* Меняем на relative, чтобы находился внутри контейнера */
+    margin-bottom: 400px; /* Отступ для демонстрации */
+    color: #f1f1f1;
+  }
+
+  /* Отдельный стиль для сообщений чата */
+  .chat-message {
+    margin-bottom: 6px; /* Отступ между сообщениями */
+  }
+
+  #nickname-input {
+    color: rgba(255, 255, 255, 0);
+    position: absolute; /* Позиционирование относительно контейнера */
+    left: 0;           /* Прикрепить к левому краю */
+    top: calc(100% + 3px); /* Расстояние 3px ниже chat-container */
+  }
+
+  #chat-input {
+    color: rgba(255, 255, 255, 0);
+    position: absolute; /* Позиционирование относительно контейнера */
+    left: 2px;         /* Расстояние 2px от nickname-input */
+    top: calc(100% + 3px); /* Расстояние 3px ниже chat-container */
+  }
+
+  #chat-send {
+    background-color: #383A40;
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Позиционирование относительно контейнера */
+    right: 5px;        /* Расстояние 5px от chat-input */
+    top: calc(100% + 3px); /* Расстояние 3px ниже chat-container */
+  }
+
+  .message {
+    left: 5%;
+    right: 15%;
+    top: calc(100% + 2%);
+    width: calc(100% - 5% - 15%);
+    margin-bottom: 10px;
+  }
