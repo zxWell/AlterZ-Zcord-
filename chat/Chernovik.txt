@@ -1,0 +1,78 @@
+// function sendMessage(event) {
+//     if(event.key === 'Enter') {
+//         const message = chatInput.value.trim();
+//         if(message) {
+//             message.push = (message);
+//             displayMessage();
+//             chatInput.value = '';
+//         }
+//     }
+// }
+
+// function displayMessage(message) {
+//     const messageDiv = document.createElement(`div`);
+//     messageDiv.textContent = message;
+//     chatMessages.appendChild(messageDiv);
+//     chatMessages.scrollTop = chatMessages.scrollHeight;
+// }
+
+// function sendMessage() {
+//     const message = chatInput.value.trim();
+//     if(message) {
+//         chatHistory.push(message);
+//         displayMessage(message);
+//         chatInput.value = '';
+//     }
+// }
+//--------------------------------------
+//<script src="chat.js"></script>
+//--------------------------------------
+<input type="text"
+            id="chat-input"
+            placeholder="ник"/>
+
+
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AlterZ</title>
+        <link rel="stylesheet" href="stylee.css">
+    </head>
+    <body>
+
+        <!-- lang -->
+        <label for="language-select"></label>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="zv">ZVOЙ</option>
+        </select>
+
+        <!-- kõik see, mida vaja -->
+        <h1 id="verhushka"></h1>
+        <h2 id="chat"></h2>
+
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+        
+            <input id="nickname-input" 
+                type="text"
+                placeholder="">
+        
+            <input id="chat-input" 
+                type="text"
+                placeholder="">
+        
+            <button id="chat-send"></button>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="lang.js"></script>
+        <script src="chat.js"></script>
+    </body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

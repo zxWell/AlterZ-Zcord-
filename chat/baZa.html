@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AlterZ</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlterZ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="channel-list">
+      <h2>Каналы группы:</h2>
+        <ul>
+          <li class="active">общее</li>
+          <li><a href="../sett/sett.html"></a>Настройки</li>
+          <li>прочее</li>
+        </ul>
+    </div>
 
-        <!-- lang -->
-        <label for="language-select"></label>
-        <select id="language-select">
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
-            <option value="zv">ZVOЙ</option>
-        </select>
+    <div class="chat-area">
+      <div class="message">
+        <span class="message-author">goida</span>
+        <div class="message-content">cicки</div>
+      </div>
+      <div class="message">
+        <span class="message-author">ZVOЙ</span>
+        <div class="message-content">boobies.</div>
+      </div>
+      <div class="message-input-container">
+        <input type="text" class="message-input" placeholder="Type your message..."/>
+      </div>
+    </div>
 
-        <!-- kõik see, mida vaja -->
-        <h1 id="verhushka"></h1>
-        <h2 id="chat"></h2>
+    <div class="participants-window">
+      <h2>Participants</h2>
+      <div class="participant">
+        <div class="participant-avatar">XD</div>
+        <div class="participant-name">goida</div>
+      </div>
+      <div class="participant">
+        <div class="participant-avatar">Z</div>
+        <div class="participant-name">ZVOЙ</div>
+      </div>
+    </div>
+  </div>
 
-        <div id="chat-container">
-            <div id="chat-messages"></div>
-        
-            <input id="nickname-input" 
-                type="text"
-                placeholder="">
-        
-            <input id="chat-input" 
-                type="text"
-                placeholder="">
-        
-            <button id="chat-send"></button>
-        </div>
-
-        <!-- JavaScript -->
-        <script src="lang.js"></script>
-        <script src="chat.js"></script>
-    </body>
+  <script src="lang.js"></script>
+  <script src="chat.js"></script>
+</body>
 </html>

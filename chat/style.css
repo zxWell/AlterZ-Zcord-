@@ -1,68 +1,187 @@
 body {
-  background: linear-gradient(185deg, #62697a, #616c88);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  button {
-    cursor: pointer;
-  }
-  
-  #language-select {
-    background: #383A40;
-    color: #f1f1f1;
-    margin-bottom: 20px;
-  }
-  #chat-container {
-    position: relative; /* Устанавливаем относительное позиционирование */
-    margin-left: 12%;  /* Отступ слева 20% */
-    margin-right: 10%;  /* Отступ справа 10% */
-    width: calc(100% - 22%); /* Ширина окна с учетом отступов */
-    height: 745px;
-    border: 1px solid rgba(0, 0, 0); 
-    padding: 15px;
-    overflow: scroll;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #36393f;
+  color: #dcddde;
 }
 
-  #chat-messages {
-    position: relative; /* Меняем на relative, чтобы находился внутри контейнера */
-    margin-bottom: 400px; /* Отступ для демонстрации */
-    color: #f1f1f1;
-  }
+/* Стили для панели навигации */
+.navigation {
+  background-color: #2f3136;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  /* Отдельный стиль для сообщений чата */
-  .chat-message {
-    margin-bottom: 6px; /* Отступ между сообщениями */
-  }
+.navigation h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
 
-  #nickname-input {
-    color: rgba(255, 255, 255, 0);
-    position: absolute; /* Позиционирование относительно контейнера */
-    left: 0;           /* Прикрепить к левому краю */
-    top: calc(100% + 3px); /* Расстояние 3px ниже chat-container */
-  }
+.navigation button {
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
 
-  #chat-input {
-    color: rgba(255, 255, 255, 0);
-    position: absolute; /* Позиционирование относительно контейнера */
-    left: 2px;         /* Расстояние 2px от nickname-input */
-    top: calc(100% + 3px); /* Расстояние 3px ниже chat-container */
-  }
+.navigation button:hover {
+  background-color: #5d72b8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
-  #chat-send {
-    background-color: #383A40;
-    color: #f0f0f0;
-    border: none;
-    cursor: pointer;
-    position: absolute; /* Позиционирование относительно контейнера */
-    right: 5px;        /* Расстояние 5px от chat-input */
-    top: calc(100% + 3px); /* Расстояние 3px ниже chat-container */
-  }
+/* Стили для окна чата */
+.chat-container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
 
-  .message {
-    left: 5%;
-    right: 15%;
-    top: calc(100% + 2%);
-    width: calc(100% - 5% - 15%);
-    margin-bottom: 10px;
-  }
+/* Стили для списка каналов */
+.channel-list {
+  background-color: #2f3136;
+  width: 240px;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.channel-list h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #b9bbbe;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.channel-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.channel-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.channel-list li:hover {
+  background-color: #393c43;
+}
+
+.channel-list li.active {
+  background-color: #7289da;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для области чата */
+.chat-area {
+  flex-grow: 1;
+  background-color: #36393f;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.message-author {
+  font-weight: bold;
+  color: #7289da;
+  margin-right: 8px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.message-content {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.message-input-container {
+  margin-top: auto;
+  background-color: #2f3136;
+  padding: 12px 16px;
+  border-radius: 4px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #dcddde;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.message-input::placeholder {
+  color: #72767d;
+}
+
+/* Стили для окна участников */
+
+.participants-window {
+  background-color: #2f3136;
+  width: 240px;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.participants-window h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #b9bbbe;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.participant {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.participant-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background-color: #7289da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.participant-name {
+  font-weight: 500;
+  color: #dcddde;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
