@@ -76,3 +76,13 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<div class="chat-messages">
+                <input type="text" 
+                class="message-input" 
+                placeholder="Type your message..." />
+              </div>
+
+
+            <div class="participants-window">

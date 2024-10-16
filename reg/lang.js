@@ -29,7 +29,7 @@ function changeLanguage(language) {
     document.getElementById("verhushka").textContent = translations[language].verhushka;
     document.getElementById("chat").textContent = translations[language].chat;
     document.getElementById("nickname-input").placeholder = translations[language].nicknamePlaceholder;
-    document.getElementById("chat-input").placeholder = translations[language].chatPlaceholder;
+    document.getElementById("message-input-container").placeholder = translations[language].chatPlaceholder;
     document.getElementById("chat-send").textContent = translations[language].sendButton;
 }
 
