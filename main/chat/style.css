@@ -42,6 +42,21 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7289da;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #677bc4;
+  }
+
   /* Стили для окна чата */
   .chat-container {
     display: flex;

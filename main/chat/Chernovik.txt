@@ -86,3 +86,5 @@
 
 
             <div class="participants-window">
+
+            calc(100vh - 60px)

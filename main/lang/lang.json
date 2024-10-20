@@ -1,0 +1,83 @@
+{
+    "langM": {
+        "en": {
+            "verhushka": "Guilds channel:",
+            "chat": "Chat",
+            "nicknamePlaceholder": "Nickname",
+            "chatPlaceholder": "Enter your message",
+            "sendButton": "Send",
+            "pidori": "Participants"
+        },
+        "ru": {
+            "verhushka":"Каналы группы:",
+            "chat": "Чат",
+            "nicknamePlaceholder": "Ник",
+            "chatPlaceholder": "Введите сообщение",
+            "sendButton": "Отправить",
+            "pidori": "участники"
+        },
+        "zv": {
+            "verhushka": "Наши слоны:",
+            "chat": "Alter Z",
+            "nicknamePlaceholder": "никнаме",
+            "chatPlaceholder": "тVOё сOO",
+            "sendButton": "Харкнуть",
+            "pidori": "наши слоны🐘"
+        }
+    },
+
+    "langS": {
+        "en": {
+            "verhushka": "Guilds channel:",
+            "chat": "Chat",
+            "nicknamePlaceholder": "Nickname",
+            "chatPlaceholder": "Enter your message",
+            "sendButton": "Send",
+            "pidori": "Participants"
+        },
+        "ru": {
+            "verhushka":"Каналы группы:",
+            "chat": "Чат",
+            "nicknamePlaceholder": "Ник",
+            "chatPlaceholder": "Введите сообщение",
+            "sendButton": "Отправить",
+            "pidori": "участники"
+        },
+        "zv": {
+            "verhushka": "Наши слоны:",
+            "chat": "Alter Z",
+            "nicknamePlaceholder": "никнаме",
+            "chatPlaceholder": "тVOё сOO",
+            "sendButton": "Харкнуть",
+            "pidori": "наши слоны🐘"
+        }
+    },
+
+    "langSt": {
+        "en": {
+            "verhushka": "Guilds channel:",
+            "chat": "Chat",
+            "nicknamePlaceholder": "Nickname",
+            "chatPlaceholder": "Enter your message",
+            "sendButton": "Send",
+            "pidori": "Participants"
+        },
+        "ru": {
+            "verhushka":"Каналы группы:",
+            "chat": "Чат",
+            "nicknamePlaceholder": "Ник",
+            "chatPlaceholder": "Введите сообщение",
+            "sendButton": "Отправить",
+            "pidori": "участники"
+        },
+        "zv": {
+            "verhushka": "Наши слоны:",
+            "chat": "Alter Z",
+            "nicknamePlaceholder": "никнаме",
+            "chatPlaceholder": "тVOё сOO",
+            "sendButton": "Харкнуть",
+            "pidori": "наши слоны🐘"
+        }
+    }
+
+}
